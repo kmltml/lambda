@@ -17,7 +17,7 @@ object Main {
   def main(args: Array[String]): Unit = {
     val editor = ace.edit("editor")
     editor.setOptions(js.Dynamic.literal(mode = "ace/mode/lambda"))
-    editor.setTheme("ace/theme/tommorow_night_eighties")
+    editor.setTheme("ace/theme/tomorrow_night_eighties")
     editor.commands.addCommand(new EditorCommand {
       var name = "lambda"
       var bindKey = "\\"
