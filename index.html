@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lambda evaluator</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jslib/tomorrow_night_eighties.css">
+    <script src="jslib/ace.js"></script>
+    <script src="jslib/termlib.js"></script>
+    <script src="jslib/ace-lambda-highlight.js"></script>
+    <!--<script src="./jslib/tomorrow_night_eighties.js"></script>-->
+  </head>
+  <body>
+    <div id="container">
+      <div id="editor-panel">
+        <div id="editor-header">
+          <button id="editor-load">Load into repl</button>
+        </div>
+        <pre id="editor" class="ace-tomorrow-night-eighties">
+id = \x . x
+        </pre>        
+      </div>
+      <div id="repl"></div>
+    </div>
+    <script src="js/target/scala-2.12/lambda-fastopt.js"></script>
+  </body>
+</html>
+  
